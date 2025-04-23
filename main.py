@@ -1,6 +1,8 @@
-from quanlisv import Sms
-from students import Student
-
+import quanlisv
+import students
+import json
+import os
+import re
 
 
 def main():
@@ -17,21 +19,19 @@ def main():
         choice = input("Chọn: ")
 
         if choice == "1":
-            # Nhập thông tin sinh vien
-            title = input("Nhap ten sinh vien: ")
-            age = input("Nhap tuoi sinh vien: ")
-            id = input("Nhap cccd: ")
+        # Nhập thông tin sinh vien
+        
+        # elif choice == "2":
 
+        # elif choice == "3":
 
-        elif choice == "2":
+        # elif choice == "4":
 
-        elif choice == "3":
-            
-        elif choice == "4":
+        # elif choice == "5":
 
-        elif choice == "4":
-            print("Tạm biệt!")
-            break
+        # elif choice == "6":
+        #     print("Thoat!")
+        #     break
 
         else:
             print("Lựa chọn không hợp lệ.")
