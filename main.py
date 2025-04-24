@@ -2,23 +2,32 @@ import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 from training214.day214 import run_of_the_day_214
-from training224.day224 import run_of_the_day_224
-
+from training224.day224 import run_of_the_inheritance
+from training224.day224 import run_of_the_polymorphism
 
 def main():
 
 
     while True:
-        print("Chọn hành động thực hiện")
-        print("1. Kiểm training day 21/4.")
-        print("2. Kiểm training day 22/4.")
-        print("3. Thoát")
+        print("Choose an action  ")
+        print("1. Check  training day 21/4.")
+        print("2. Check training day 22/4.")
+        print("3. Exit")
 
-        choice = input("Chọn: ")
+        choice = input("Choose ur number: \n")
         if choice == '1':
             run_of_the_day_214()
+
         elif choice == '2':
-            run_of_the_day_224()
+            while True :
+                print("1. Check  eg Inhertance  .")
+                print("2. Check  eg Polymorphism .")
+
+                choice_of_day= input("Choose ur number: \n")
+                if choice_of_day == '1':
+                   run_of_the_inheritance()
+                elif choice_of_day == '2':
+                   run_of_the_polymorphism()
         elif choice == '3':
             break
 

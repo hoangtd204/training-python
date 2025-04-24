@@ -13,8 +13,8 @@ class Student:
 def run_of_the_day_214():
  student1 = Student("Alice", 20)
  student2 = Student("Bob", 22)
- student1.sayhello()
- student2.sayhello()
+ student1.say_hello()
+ student2.say_hello()
 
 
 
