@@ -1,0 +1,11 @@
+order_id,product_name,date,quantity,price,revenue
+1001,iPhone 13,2023-01-10,2,899,1798
+1002,Samsung Galaxy S22,2023-01-15,1,799,999
+1003,iPhone 13,2023-01-20,1,899,899
+1004,AirPods Pro,2023-02-05,3,249,947
+1005,MacBook Pro,2023-02-10,1,1999,1999
+1006,Samsung Galaxy Buds,2023-02-15,2,149,298
+1007,MacBook Air,2023-03-01,2,1099,2198
+1008,iPad Air,2023-03-05,1,599,599
+1009,Apple Watch SE,2023-03-10,3,279,837
+1010,iPhone 13,2023-03-15,1,899,899
