@@ -6,6 +6,8 @@ from training224.day224 import run_of_the_inheritance
 from training224.day224 import run_of_the_polymorphism
 from training234.miniprjwithpandas import filter_data
 from training234.day234 import run_of_the_day234
+from trainingday284.day284 import filter_data_miniprj
+
 
 def main():
     while True:
@@ -13,8 +15,9 @@ def main():
         print("1. Check  training day 21/4.")
         print("2. Check training day 22/4.")
         print("3. Check training day 23/4.")
-        print("4. Check exercise  .")
-        print("5. Exit")
+        print("4. Check training day 22/4.")
+        print("5. Check training day 28/4.")
+        print("6 . Exit")
         choice = input("Choose ur number: \n")
         if choice == '1':
             run_of_the_day_214()
@@ -32,6 +35,9 @@ def main():
         elif choice == '4':
             filter_data()
         elif choice == '5':
+            filter_data_miniprj()
+        elif choice == '6':
             break
-
+        else :
+            print("Wrong choice")
 main()
