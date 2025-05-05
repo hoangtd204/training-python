@@ -1,13 +1,14 @@
+from training55.demo_request import requestAPI
+from trainingday284.day284 import filter_data_miniprj
+from training234.day234 import run_of_the_day234
+from training234.miniprjwithpandas import filter_data
+from training224.day224 import run_of_the_polymorphism
+from training224.day224 import run_of_the_inheritance
+from training214.day214 import run_of_the_day_214
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
-from training214.day214 import run_of_the_day_214
-from training224.day224 import run_of_the_inheritance
-from training224.day224 import run_of_the_polymorphism
-from training234.miniprjwithpandas import filter_data
-from training234.day234 import run_of_the_day234
-from trainingday284.day284 import filter_data_miniprj
-from trainingday284.demo_request import requestAPI
+
 
 def main():
     while True:
@@ -23,14 +24,14 @@ def main():
         if choice == '1':
             run_of_the_day_214()
         elif choice == '2':
-            while True :
+            while True:
                 print("1. Check  eg Inhertance  .")
                 print("2. Check  eg Polymorphism .")
-                choice_of_day= input("Choose ur number: \n")
+                choice_of_day = input("Choose ur number: \n")
                 if choice_of_day == '1':
-                   run_of_the_inheritance()
+                    run_of_the_inheritance()
                 elif choice_of_day == '2':
-                   run_of_the_polymorphism()
+                    run_of_the_polymorphism()
         elif choice == '3':
             run_of_the_day234()
         elif choice == '4':
@@ -41,6 +42,8 @@ def main():
             requestAPI
         elif choice == '7':
             break
-        else :
+        else:
             print("Wrong choice")
+
+
 main()
