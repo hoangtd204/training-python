@@ -1,4 +1,4 @@
-from training55.demo_request import requestAPI
+from training55.demo_request import get_inf
 from trainingday284.day284 import filter_data_miniprj
 from training234.day234 import run_of_the_day234
 from training234.miniprjwithpandas import filter_data
@@ -27,7 +27,7 @@ def main():
             while True:
                 print("1. Check  eg Inhertance  .")
                 print("2. Check  eg Polymorphism .")
-                choice_of_day = input("Choose ur number: \n")
+                choice_of_day = input("Choose ur number: ")
                 if choice_of_day == '1':
                     run_of_the_inheritance()
                 elif choice_of_day == '2':
@@ -39,7 +39,7 @@ def main():
         elif choice == '5':
             filter_data_miniprj()
         elif choice == '6':
-            requestAPI
+            get_inf()
         elif choice == '7':
             break
         else:
