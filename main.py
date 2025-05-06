@@ -1,4 +1,5 @@
-from training55.demo_request import get_inf
+from training55.demo_request import config_repo
+from training55.demoparse import get_inf
 from trainingday284.day284 import filter_data_miniprj
 from training234.day234 import run_of_the_day234
 from training234.miniprjwithpandas import filter_data
@@ -18,8 +19,8 @@ def main():
         print("3. Check training day 23/4.")
         print("4. Check training day 22/4.")
         print("5. Check training day 28/4.")
-        print("6. Check training day 5/5.")
-        print("7 . Exit")
+        print("6. Check training day 6/5.")
+        print("0. Exit")
         choice = input("Choose ur number: \n")
         if choice == '1':
             run_of_the_day_214()
@@ -39,8 +40,15 @@ def main():
         elif choice == '5':
             filter_data_miniprj()
         elif choice == '6':
-            get_inf()
-        elif choice == '7':
+            while True:
+                print("1. Check  eg task report 1 at day 6/5 .")
+                print("2. Check  eg task report 2 at day 6/5 .")
+                choice_of_day = input("Choose ur number: ")
+                if choice_of_day == '1':
+                    config_repo()
+                elif choice_of_day == '2':
+                    get_inf()
+        elif choice == '0':
             break
         else:
             print("Wrong choice")
